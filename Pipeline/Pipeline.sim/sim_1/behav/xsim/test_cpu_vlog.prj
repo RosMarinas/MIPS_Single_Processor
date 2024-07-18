@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ALU.v" \
+"../../../../ALUControl.v" \
+"../../../../CPU.v" \
+"../../../../Control.v" \
+"../../../../DataMemory.v" \
+"../../../../EX MEM_Reg.v" \
+"../../../../ID_EX_Reg.v" \
+"../../../../IF ID_Reg.v" \
+"../../../../InstructionMemory.v" \
+"../../../../MEM WB_Reg.v" \
+"../../../../RegisterFile.v" \
+"../../../../forwading.v" \
+"../../../../hazard.v" \
+"../../../../test_cpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

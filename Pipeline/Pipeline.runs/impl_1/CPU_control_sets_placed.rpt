@@ -1,0 +1,626 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Jul 17 21:01:25 2024
+| Host         : matebook14 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   548 |
+|    Minimum number of control sets                        |   548 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   548 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   547 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             137 |           61 |
+| No           | No                    | Yes                    |             426 |          128 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |           17459 |         6660 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------------+------------------+------------------+----------------+--------------+
+|   Clock Signal   |              Enable Signal             | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+----------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_12[0]        | reset_IBUF       |                7 |             12 |         1.71 |
+|  PC_next__0_BUFG |                                        |                  |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_2[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_1[0]   | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_10[0]  | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_5[0]          | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_10[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_11[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_31[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_21[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_24[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_25[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_27[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_6[0]          | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_9[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_30[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_0[0]          | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_1[0]          | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_27[0]         | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_7[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_12[0]         | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_15[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_23[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_26[0]         | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_18[0]         | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_29[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_3[0]          | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_36[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_26[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_37[0]         | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_19[0]         | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_39[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_33[0]         | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_4[0]          | reset_IBUF       |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_14[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_34[0]         | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_35[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_29[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_9[0]          | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_40[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_41[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_38[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_31[0]         | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_10[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_4[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_42[0]         | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_28[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_5[0]          | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_8[0]          | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_3[0]          | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_2[0]          | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_20[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_7[0]          | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_11[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_17[0]         | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_4[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_22[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_25[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_1[0]          | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_0[0]          | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_2[0]          | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_28[0]         | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[5]_8[0]          | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_3[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_13[0]         | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_6[0]          | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_30[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_32[0]         | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_16[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_6[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_10[0]     | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_6[0]      | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_27[0]     | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_7[0]      | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_3[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_4[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_8[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_14[0]     | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_5[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_6[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_7[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_20[0]     | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_46[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_17[0]     | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_24[0]     | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_22[0]     | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_5[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_47[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_6[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_0[0]      | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_8[0]      | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_0[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_7[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_9[0]      | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_1[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_8[0]   | reset_IBUF       |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_0[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_19[0]     | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_1[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_10[0]  | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_7[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_5[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_3[0]      | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_4[0]      | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_48[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_45[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_12[0]     | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_4[0]      | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_12[0]     | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_43[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_9[0]      | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_13[0]     | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__1_2[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_11[0]     | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_8[0]      | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_0[0]      | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_44[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_1[0]      | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_15[0]     | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_18[0]     | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_21[0]     | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_9[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_3[0]      | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_2[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_5[0]      | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[7]_rep_11[0]     | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_10[0]     | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_16[0]     | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_2[0]      | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[6]_49[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_23[0]     | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_26[0]     | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep_25[0]     | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_25[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_7[0]   | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_4[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_4[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_8[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_0[0]          | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_17[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_15[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_12[0]         | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_15[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_11[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_25[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_2[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_26[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_14[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_18[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_2[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_6[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_3[0]   | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_21[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_9[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_12[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_13[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_3[0]          | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_5[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_22[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_7[0]          | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_9[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_1[0]          | reset_IBUF       |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_13[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_14[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_16[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_24[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_1[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_10[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_8[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_13[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_11[0]         | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_19[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_14[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_2[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_23[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_6[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_10[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_4[0]          | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_21[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_3[0]   | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_18[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_20[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_20[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_27[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_5[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_11[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_23[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_17[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_24[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_26[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_12[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_22[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_16[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_7[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_5[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__3_6[0]   | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[8]_rep__2_19[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_8[0]          | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[9]_9[0]          | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/E[0]                            | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/E[0]                             | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_0[0]            | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_1[0]            | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_10[0]           | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_11[0]           | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_12[0]           | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_13[0]           | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_14[0]           | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_15[0]           | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_16[0]           | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_17[0]           | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_18[0]           | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_19[0]           | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_28[0]           | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_21[0]           | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_20[0]           | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_7[0]            | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_2[0]            | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_3[0]            | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_8[0]            | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_5[0]            | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_25[0]           | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_27[0]           | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_23[0]           | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_26[0]           | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_29[0]           | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_22[0]           | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_4[0]            | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_6[0]            | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_24[0]           | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | memwb/RegWrite_out_reg_9[0]            | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__23_2[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__27_3[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_11[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_12[0]         | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__21_4[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__30_2[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_13[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__23_3[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_14[0]         | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__21_0[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__21_3[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__23_4[0]  | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__30_4[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__25_0[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__25_2[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_10[0]         | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_17[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__30_3[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_2[0]          | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_20[0]         | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__30_5[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_19[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_16[0]         | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__23_0[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__27_2[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_15[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_21[0]         | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_24[0]         | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__21_2[0]  | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__30_0[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_1[0]          | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_18[0]         | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_22[0]         | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_23[0]         | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__30_6[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[4]_0[0]          | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[3]_rep__27_0[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_10[0]        | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_1[0]         | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_11[0]        | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_2[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_5[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_3[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_0[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_3[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_9[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_2[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_9[0]         | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_6[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__11_3[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_11[0] | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_8[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_10[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__11_2[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_11[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_2[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_16[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_8[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep_6[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_1[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_2[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_7[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_9[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_4[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_10[0] | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_8[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep_2[0]      | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_4[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_11[0] | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_5[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_14[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_1[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_12[0] | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_4[0]         | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_14[0] | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_13[0] | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_13[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_7[0]         | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_8[0]         | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_6[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__11_1[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_7[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_3[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_1[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_5[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep_5[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_12[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[10]_6[0]         | reset_IBUF       |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_1[0]   | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_7[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_10[0] | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__11_5[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_4[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_14[0] | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_15[0] | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_16[0] | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_2[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__10_3[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep_1[0]      | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__0_15[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__11_4[0]  | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_13[0] | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_12[0] | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep_4[0]      | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_5[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep_3[0]      | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__11_6[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__12_6[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_6[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_7[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_10[0] | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_10[0] | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_14[0] | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__16_4[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_11[0] | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_1[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_8[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_1[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_3[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__16_3[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_5[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_6[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_7[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_2[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_4[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_16[0] | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_1[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_9[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_4[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_7[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_3[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_8[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__16_2[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__17_4[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_5[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_7[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_3[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_8[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_9[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_4[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__16_6[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_5[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__16_1[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_6[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_8[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_3[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__17_3[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__17_6[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_1[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_2[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_3[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_11[0] | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_12[0] | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_13[0] | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_4[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_6[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_7[0]  | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_12[0] | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_14[0] | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_15[0] | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_6[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_2[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__16_5[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_9[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__17_1[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__17_2[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__18_4[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__13_5[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_5[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__14_13[0] | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__15_2[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__17_5[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__21_5[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_2[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__27_1[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_2[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__29_1[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_0[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__29_2[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_1[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_2[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_3[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_14[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_5[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_0[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__28_1[0]  | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_4[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_9[0]  | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__22_3[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_4[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_6[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__21_1[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_4[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_6[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_5[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_7[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__2_8[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_2[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_6[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__19_8[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_7[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_13[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_3[0]   | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__22_1[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_3[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_8[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__22_4[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_6[0]  | reset_IBUF       |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__21_4[0]  | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__21_2[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__22_2[0]  | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_2[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_7[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_1[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_0[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_4[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_5[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_11[0] | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__21_6[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_8[0]   | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_3[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_10[0] | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_3[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_7[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__21_3[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_12[0]  | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_7[0]   | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_4[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_6[0]  | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__24_8[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_10[0]  | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_11[0]  | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__20_5[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__23_5[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__26_1[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__1_9[0]   | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__3_1[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_14[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_16[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_1[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_15[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_6[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_7[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__7_6[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__31_1[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__7_4[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_13[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_1[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_10[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_2[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_11[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_5[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_14[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_12[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_3[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_4[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_13[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_15[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__3_2[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__3_3[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_13[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_11[0]  | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_16[0]  | reset_IBUF       |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__3_5[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_2[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_12[0]  | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_3[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_4[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_9[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_5[0]   | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_6[0]   | reset_IBUF       |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_4[0]   | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_14[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_6[0]   | reset_IBUF       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_8[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_10[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__3_6[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_7[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_1[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_3[0]   | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_7[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_2[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__7_1[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__7_2[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__7_3[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_9[0]   | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_12[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_2[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_4[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_11[0]  | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__7_5[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_5[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_8[0]   | reset_IBUF       |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_3[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__4_10[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_6[0]   | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_5[0]   | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__3_4[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__5_8[0]   | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__6_1[0]   | reset_IBUF       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_12[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_14[0]  | reset_IBUF       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_3[0]   | reset_IBUF       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_5[0]   | reset_IBUF       |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_7[0]   | reset_IBUF       |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_7[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_8[0]   | reset_IBUF       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_8[0]   | reset_IBUF       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_9[0]   | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__8_9[0]   | reset_IBUF       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_11[0]  | reset_IBUF       |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_4[0]   | reset_IBUF       |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_6[0]   | reset_IBUF       |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG   | ex_mem/ALURes_out_reg[2]_rep__9_13[0]  | reset_IBUF       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG   | id_ex/branch_out_reg_1                 | reset_IBUF       |               29 |             71 |         2.45 |
+|  clk_IBUF_BUFG   |                                        |                  |               46 |            105 |         2.28 |
+|  clk_IBUF_BUFG   |                                        | reset_IBUF       |              128 |            426 |         3.33 |
++------------------+----------------------------------------+------------------+------------------+----------------+--------------+
+
+

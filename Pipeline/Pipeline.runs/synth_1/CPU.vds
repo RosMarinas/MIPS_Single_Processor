@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul 17 20:56:09 2024
+# Process ID: 31072
+# Current directory: F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1/CPU.vds
+# Journal file: F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1\vivado.jou
+# Running On: matebook14, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 394.062 ; gain = 55.246
+Command: read_checkpoint -auto_incremental -incremental F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.srcs/utils_1/imports/synth_1/PipelineCPU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.srcs/utils_1/imports/synth_1/PipelineCPU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8920
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.656 ; gain = 406.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Flush' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Flush' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v:162]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Control' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v:1]
+WARNING: [Synth 8-689] width (5) of port connection 'stall' does not match port width (1) of module 'MEM_WB' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v:339]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v:1]
+WARNING: [Synth 8-7129] Port reset in module MEM_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall in module MEM_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[4] in module EX_MEM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[1] in module EX_MEM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[0] in module EX_MEM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[4] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[3] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[0] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[4] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[3] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[2] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[0] in module ID_EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flush[1] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[19] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[18] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[17] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[16] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[15] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[14] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[13] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[12] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[1] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address[0] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rs[4] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rs[3] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rs[2] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rs[1] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rs[0] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_regwr in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rd[4] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rd[3] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rd[2] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rd[1] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_rd[0] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EX_MEM_memread in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EX_MEM_regwrad[4] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EX_MEM_regwrad[3] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EX_MEM_regwrad[2] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EX_MEM_regwrad[1] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EX_MEM_regwrad[0] in module Hazard_Flush is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_jump in module Hazard_Flush is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1355.656 ; gain = 557.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1355.656 ; gain = 557.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1355.656 ; gain = 557.488
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.292 . Memory (MB): peak = 1355.656 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/top.xdc]
+Finished Parsing XDC File [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1470.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1470.145 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.srcs/utils_1/imports/synth_1/PipelineCPU.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'PC_next_reg' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v:156]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:33 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 557   
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 8     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 30    
+	  11 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	  21 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 12    
+	  12 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 554   
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:07 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:21 . Memory (MB): peak = 1470.145 ; gain = 671.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 1589.262 ; gain = 791.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:53 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:02:02 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:02:02 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:02:05 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:02:05 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:02:05 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:02:05 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    36|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    38|
+|5     |LUT2    |   186|
+|6     |LUT3    |   147|
+|7     |LUT4    |   252|
+|8     |LUT5    |   634|
+|9     |LUT6    |  5929|
+|10    |MUXF7   |  2469|
+|11    |MUXF8   |  1186|
+|12    |FDCE    | 17807|
+|13    |FDPE    |    78|
+|14    |FDRE    |   105|
+|15    |LD      |    32|
+|16    |IBUF    |     2|
+|17    |OBUF    |    12|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:02:05 . Memory (MB): peak = 1590.336 ; gain = 792.168
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:02:00 . Memory (MB): peak = 1590.336 ; gain = 677.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:02:06 . Memory (MB): peak = 1590.336 ; gain = 792.168
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.372 . Memory (MB): peak = 1590.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3726 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'CPU' is not ideal for floorplanning, since the cellview 'DataMemory' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1590.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+Synth Design complete, checksum: c81f9f03
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 63 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:02:18 . Memory (MB): peak = 1590.336 ; gain = 1171.434
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 20:58:39 2024...

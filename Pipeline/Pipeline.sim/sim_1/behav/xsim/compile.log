@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Flush
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/test_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_cpu

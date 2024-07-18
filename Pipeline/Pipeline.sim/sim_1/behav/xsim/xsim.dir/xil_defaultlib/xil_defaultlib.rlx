@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALU.v,1689782485,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v,,ALU,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v,1689502799,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v,,ALUControl,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v,1721220886,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v,,CPU,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v,1721220827,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v,,Control,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v,1721155737,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v,,DataMemory,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v,1689602149,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v,,EX_MEM,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v,1689773153,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v,,ID_EX,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v,1689773151,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v,,IF_ID,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v,1721153228,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v,,InstructionMemory,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v,1689779433,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v,,MEM_WB,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v,1683782702,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v,,RegisterFile,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v,1689782068,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v,,Forwarding,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v,1689820784,verilog,,F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/test_cpu.v,,Hazard_Flush,,,,,,,,
+,,,,,,,,,,,,,,
+F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/test_cpu.v,1689925362,verilog,,,,test_cpu,,,,,,,,

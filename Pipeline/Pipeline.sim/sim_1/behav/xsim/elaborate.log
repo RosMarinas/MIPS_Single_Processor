@@ -1,0 +1,53 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_cpu_behav xil_defaultlib.test_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'stall' [F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v:339]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v" Line 1. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v" Line 1. Module Forwarding doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v" Line 1. Module Hazard_Flush doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v" Line 1. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v" Line 2. Module Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v" Line 2. Module ALUControl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v" Line 2. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALU.v" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v" Line 1. Module DataMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/CPU.v" Line 1. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/forwading.v" Line 1. Module Forwarding doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/hazard.v" Line 1. Module Hazard_Flush doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/InstructionMemory.v" Line 1. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/IF ID_Reg.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Control.v" Line 2. Module Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALUControl.v" Line 2. Module ALUControl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/RegisterFile.v" Line 2. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ID_EX_Reg.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/ALU.v" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/EX MEM_Reg.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/DataMemory.v" Line 1. Module DataMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/MEM WB_Reg.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Forwarding
+Compiling module xil_defaultlib.Hazard_Flush
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.test_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_cpu_behav

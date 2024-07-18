@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul 17 20:56:09 2024
+# Process ID: 31072
+# Current directory: F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1/CPU.vds
+# Journal file: F:/Learning/2024summer/vivado/MIPS_Pipeline/Pipeline/Pipeline.runs/synth_1\vivado.jou
+# Running On: matebook14, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace
